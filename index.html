@@ -2,43 +2,50 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pi Community Pulse</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Style de base -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet CSS (pour la carte) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
   <header>
     <h1>🚀 Pi Community Pulse</h1>
-    <p>Application communautaire pour les pionniers de Pi Network</p>
+    <p>Actualités, Projets, et Initiatives autour de Pi Network</p>
   </header>
 
-  <main>
-<section id="news">
-  <h2>📰 Actualités Pi Network</h2>
-  <div id="news-container">Chargement des actualités...</div>
-</section><section id="projects">
-  <h2>🌍 Projets Pi Network dans le monde</h2>
-  <div id="map" style="height: 400px;"></div>
-</section>
+  <!-- Section Actualités -->
+  <section id="news">
+    <h2>🗞️ Dernières Actualités</h2>
+    <ul id="news-list">
+      <li>Chargement des actualités...</li>
+    </ul>
+  </section>
 
-<!-- Ajouter Leaflet CSS et JS (dans le <head> ou juste avant </body>) -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Section Carte des Projets -->
+  <section id="projects">
+    <h2>🌍 Projets Pi Network dans le monde</h2>
+    <div id="map" style="height: 400px; margin: 20px 0;"></div>
+  </section>
 
-    <section id="polls">
-      <h2>📊 Sondage Communautaire</h2>
-      <p>Quel type de projet Pi vous intéresse le plus ?</p>
-      <button onclick="vote('marketplace')">Marketplace</button>
-      <button onclick="vote('réseau social')">Réseau Social</button>
-      <button onclick="vote('jeux')">Jeux</button>
-      <div id="result"></div>
-    </section>
-  </main>
+  <!-- Section iPoll -->
+  <section id="ipoll">
+    <h2>📊 iPoll communautaire</h2>
+    <p>Bientôt disponible...</p>
+  </section>
 
+  <!-- Pied de page -->
   <footer>
-    <p>Créé par un pionnier, pour les pionniers ⚡</p>
+    <p>&copy; 2025 Pi Community Pulse. Propulsé par les Pionniers.</p>
   </footer>
 
+  <!-- Script principal -->
   <script src="script.js"></script>
+
+  <!-- Leaflet JS (pour la carte) -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 </html>
