@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pi Community Pulse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚀 Pi Community Pulse</h1>
+    <p>Application communautaire pour les pionniers de Pi Network</p>
+  </header>
+
+  <main>
+    <section id="news">
+      <h2>📰 Actualités Pi</h2>
+      <p>Aucune actualité pour le moment.</p>
+    </section>
+
+    <section id="polls">
+      <h2>📊 Sondage Communautaire</h2>
+      <p>Quel type de projet Pi vous intéresse le plus ?</p>
+      <button onclick="vote('marketplace')">Marketplace</button>
+      <button onclick="vote('réseau social')">Réseau Social</button>
+      <button onclick="vote('jeux')">Jeux</button>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Créé par un pionnier, pour les pionniers ⚡</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
